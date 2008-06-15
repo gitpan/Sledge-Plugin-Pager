@@ -23,6 +23,7 @@ sub run_sledge {
 package t::TestPages;
 use strict;
 use warnings;
+require Sledge::TestPages;
 use base qw/Sledge::TestPages/;
 
 my $x;

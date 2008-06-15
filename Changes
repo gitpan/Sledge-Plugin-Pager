@@ -1,5 +1,11 @@
 Revision history for Sledge-Plugin-Pager
 
+0.02
+
+    - use Module::Install
+    - fixed some tests
+    - some tests moved to xt/
+
 0.0.1  Sun Nov  5 00:35:46 2006
        Initial release.
 

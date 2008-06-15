@@ -3,6 +3,12 @@ use warnings;
 use Test::Base;
 BEGIN {
     local $SIG{__WARN__} = sub { };
+    eval q[use Class::DBI::Pager;];
+    plan skip_all => "Class::DBI::Pager required for testing base: $@" if $@;
+    eval q[use Class::DBI::Test::SQLite;];
+    plan skip_all => "Class::DBI::Test::SQLite required for testing base: $@" if $@;
+    eval q[use Sledge::TestPages;];
+    plan skip_all => "Sledge::TestPages required for testing base: $@" if $@;
     eval q[use t::TestSledge;use t::Data::CD];
     plan skip_all => "t::TestSledge, t::Data::CD required for testing base: $@" if $@;
 };

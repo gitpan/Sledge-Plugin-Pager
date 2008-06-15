@@ -1,7 +1,7 @@
 package Sledge::Plugin::Pager;
 use strict;
 use warnings;
-our $VERSION = 0.01;
+our $VERSION = '0.02';
 use Carp;
 
 sub import {
@@ -49,7 +49,7 @@ sub AUTOLOAD {
 
         my $page  = $self->{page};
         my $pager = $self->{table}->pager(
-            $page->config->paging_num,
+            $page->create_config->paging_num,
             $page->r->param($REQUEST_PARAM) || 1,
         );
 
@@ -111,7 +111,7 @@ Sledge::Plugin::Pager -
 
 =head1 DESCRIPTION
 
-helper plugin for paginate the cdbi model.
+helper plugin for paginate the Class::DBI model.
 
 =head1 INTERFACE 
 
@@ -123,7 +123,7 @@ No bugs have been reported.
 
 Tokuhiro Matsuno  C<< <tokuhiro __at__ mobilefactory.jp> >>
 
-=head1 LICENCE AND COPYRIGHT
+=head1 LICENSE AND COPYRIGHT
 
 Copyright (c) 2006, Tokuhiro Matsuno C<< <tokuhiro __at__ mobilefactory.jp> >>. All rights reserved.
 

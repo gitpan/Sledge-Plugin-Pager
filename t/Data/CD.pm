@@ -2,6 +2,7 @@ package t::Data::CD;
 use strict;
 use warnings;
 use Class::DBI;
+require Class::DBI::Test::SQLite;
 use base 'Class::DBI::Test::SQLite';
 use Class::DBI::Pager;
 

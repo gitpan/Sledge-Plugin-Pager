@@ -1,7 +1,8 @@
 Changes
-inc/Module/AutoInstall.pm
+inc/Class/DBI.pm
+inc/Class/DBI/Pager.pm
 inc/Module/Install.pm
-inc/Module/Install/AutoInstall.pm
+inc/Module/Install/AuthorTests.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
 inc/Module/Install/Fetch.pm
@@ -11,23 +12,25 @@ inc/Module/Install/Metadata.pm
 inc/Module/Install/TestBase.pm
 inc/Module/Install/Win32.pm
 inc/Module/Install/WriteAll.pm
+inc/Sledge/TestPages.pm
 inc/Spiffy.pm
 inc/Test/Base.pm
 inc/Test/Base/Filter.pm
 inc/Test/Builder.pm
 inc/Test/Builder/Module.pm
 inc/Test/More.pm
+inc/YAML.pm
 lib/Sledge/Plugin/Pager.pm
 Makefile.PL
-MANIFEST
-META.yml			# Will be created by "make dist"
+MANIFEST			This list of files
+META.yml
 README
-t/00.load.t
+t/00_compile.t
 t/01.base.t
 t/Data/CD.pm
-t/perlcritic.t
-t/pod-coverage.t
-t/pod.t
-t/spelling.t
 t/test.html
 t/TestSledge.pm
+xt/01_podspell.t
+xt/02_perlcritic.t
+xt/03_pod.t
+xt/perlcriticrc
